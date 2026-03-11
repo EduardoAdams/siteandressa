@@ -3,57 +3,439 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andressa Wendling - Psicóloga Clínica</title>
-    <meta name="description" content="Psicóloga Clínica em Porto Alegre e Online. Bem-estar e saúde mental começam com uma escolha consciente.">
+    <title>Andressa Wendling – Psicóloga Clínica | Porto Alegre & Online</title>
+    <meta name="description" content="Psicóloga Clínica em Porto Alegre e Online. Atendimento especializado em ansiedade, depressão e autoconhecimento. Agende sua consulta!">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container header-container">
-            <a href="#" class="logo">
-                <span class="logo-text">AW</span>
-                <div class="logo-name">
-                    <strong>Andressa Wendling</strong>
-                    <span>Psicóloga Clínica CRP 07/00000</span>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#hero" class="logo">
+                <div class="logo-monogram">AW</div>
+                <div class="logo-info">
+                    <span class="logo-name">Andressa Wendling</span>
+                    <span class="logo-sub">Psicóloga</span>
                 </div>
             </a>
-            <nav class="nav" id="nav-menu">
+
+            <nav class="nav" id="nav">
                 <ul class="nav-list">
                     <li><a href="#hero" class="nav-link">Início</a></li>
-                    <li><a href="#about" class="nav-link">Sobre Mim</a></li>
-                    <li><a href="#specialties" class="nav-link">Especialidades</a></li>
-                    <li><a href="#faq" class="nav-link">Dúvidas</a></li>
-                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+                    <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
+                    <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
-            <div class="header-actions">
-                <a href="https://wa.me/5599999999999" class="btn btn-primary btn-small">Agendar Agora</a>
-                <button class="menu-toggle" aria-label="Abrir menu" id="menu-toggle">
-                    <span class="hamburger"></span>
+
+            <div class="header-right">
+                <span class="crp-badge">CRP 07/33314</span>
+                <a href="https://wa.me/5551999999999?text=Olá! Gostaria de agendar uma consulta." target="_blank" class="btn btn-header">Agendar Agora</a>
+                <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir menu">
+                    <span></span><span></span><span></span>
                 </button>
             </div>
         </div>
     </header>
 
-    <main>
-        <section id="hero" class="hero">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Bem-estar e saúde mental começam com uma <span>escolha consciente.</span></h1>
-                    <p class="hero-subtitle">Psicoterapia presencial em Porto Alegre e atendimento online para todo o mundo. Dê o primeiro passo para uma vida mais leve e equilibrada.</p>
-                    <a href="https://wa.me/5599999999999" class="btn btn-primary btn-large">Agendar Consulta via WhatsApp</a>
-                </div>
-                <div class="hero-image">
-                    <div class="image-placeholder"></div>
+    <!-- ========== HERO ========== -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-inner">
+            <div class="hero-content" data-animate>
+                <h1 class="hero-title">Bem-estar e saúde<br>mental começam com<br>uma <em>escolha consciente</em></h1>
+                <p class="hero-desc">Seu dia a dia pode ser mais leve. Encontre um espaço seguro de acolhimento e escuta clínica com a Psicóloga Andressa Wendling (CRP 07/33314).</p>
+                <a href="https://wa.me/5551999999999?text=Olá! Gostaria de agendar uma consulta." target="_blank" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Agendar Consulta via WhatsApp
+                </a>
+            </div>
+            <div class="hero-image-wrap" data-animate data-delay="200">
+                <div class="hero-img-circle"></div>
+                <div class="hero-photo-placeholder">
+                    <svg viewBox="0 0 200 250" fill="none"><rect width="200" height="250" rx="12" fill="#1a4a45" opacity="0.3"/><circle cx="100" cy="90" r="45" fill="#B0907C" opacity="0.5"/><rect x="30" y="155" width="140" height="95" rx="10" fill="#B0907C" opacity="0.3"/><text x="100" y="230" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="11" font-family="Montserrat">Foto da Psicóloga</text></svg>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 80" fill="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fff"/></svg>
+        </div>
+    </section>
 
-        <!-- Other sections will be added via CSS to avoid long payload issues for now -->
-    </main>
+    <!-- ========== STATS ========== -->
+    <section class="stats">
+        <div class="container stats-inner">
+            <div class="stat-item" data-animate>
+                <span class="stat-num">+5</span>
+                <span class="stat-label">Anos de Experiência</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item" data-animate data-delay="100">
+                <span class="stat-num">+120</span>
+                <span class="stat-label">Pacientes Atendidos</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item" data-animate data-delay="200">
+                <span class="stat-num">100%</span>
+                <span class="stat-label">Sigilo e Ética</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item" data-animate data-delay="300">
+                <span class="stat-num">⭐ 5.0</span>
+                <span class="stat-label">Avaliação no Google</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SOBRE MIM ========== -->
+    <section id="sobre" class="sobre section-pad">
+        <div class="container sobre-inner">
+            <div class="sobre-photo-wrap" data-animate>
+                <div class="sobre-photo-placeholder">
+                    <svg viewBox="0 0 340 420" fill="none"><rect width="340" height="420" rx="180" fill="#e8e0d8"/><circle cx="170" cy="155" r="75" fill="#B0907C" opacity="0.6"/><rect x="50" y="250" width="240" height="170" rx="120" fill="#B0907C" opacity="0.4"/></svg>
+                </div>
+                <div class="sobre-badge">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span>CRP 07/33314</span>
+                </div>
+            </div>
+
+            <div class="sobre-content" data-animate data-delay="150">
+                <span class="eyebrow">Quem sou eu?</span>
+                <h2>Sou a Andressa Wendling,<br>apaixonada pelo ser humano.</h2>
+                <p>Minha trajetória é marcada pela curiosidade genuína sobre a mente humana e pelo desejo de ajudar pessoas a encontrarem um caminho mais leve. Formada em Psicologia, especialista em abordagem Psicanalítica.</p>
+                <p>Acredito que a terapia não é apenas para momentos de crise — ela é um espaço de crescimento, autoconhecimento e transformação para qualquer fase da vida.</p>
+
+                <ul class="sobre-list">
+                    <li>
+                        <span class="icon-check">✓</span>
+                        Atendimento presencial em Porto Alegre/RS
+                    </li>
+                    <li>
+                        <span class="icon-check">✓</span>
+                        Atendimento online para todo o Brasil
+                    </li>
+                    <li>
+                        <span class="icon-check">✓</span>
+                        Abordagem Psicanalítica – Sigilo absoluto
+                    </li>
+                </ul>
+                <a href="https://wa.me/5551999999999?text=Olá! Gostaria de agendar uma consulta." target="_blank" class="btn btn-primary">Falar no WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ESPECIALIDADES ========== -->
+    <section id="especialidades" class="especialidades section-pad bg-light">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="eyebrow">Como posso ajudar</span>
+                <h2>Especialidades e Áreas de Atuação</h2>
+                <p class="section-sub">Cada pessoa carrega uma história única. Meu papel é ouvir a sua e caminhar junto com você.</p>
+            </div>
+
+            <div class="cards-grid" data-animate>
+                <div class="esp-card">
+                    <div class="esp-icon">🌿</div>
+                    <h3>Ansiedade e Estresse</h3>
+                    <p>Aprenda a lidar com o excesso de pensamentos, preocupações constantes e a sensação de que falta ar. Juntos, construímos estratégias para trazer mais calma ao cotidiano.</p>
+                </div>
+                <div class="esp-card">
+                    <div class="esp-icon">🌙</div>
+                    <h3>Depressão</h3>
+                    <p>Um espaço de escuta sem julgamentos para ressignificar a dor e encontrar novos sentidos. A terapia é um passo fundamental para sair do peso do isolamento emocional.</p>
+                </div>
+                <div class="esp-card">
+                    <div class="esp-icon">💛</div>
+                    <h3>Autoestima e Autoconhecimento</h3>
+                    <p>Descubra quem você é além das suas limitações. Desenvolva autocompaixão, clareza sobre seus valores e mais segurança para tomar decisões importantes.</p>
+                </div>
+                <div class="esp-card">
+                    <div class="esp-icon">🤝</div>
+                    <h3>Relacionamentos</h3>
+                    <p>Melhore a forma como você se relaciona — com parceiros, família e colegas. Aprenda a estabelecer limites saudáveis e a se comunicar de maneira mais assertiva.</p>
+                </div>
+                <div class="esp-card">
+                    <div class="esp-icon">🔥</div>
+                    <h3>Burnout e Esgotamento</h3>
+                    <p>Para quem sente que não tem mais energia para nada. Identificamos as raízes do esgotamento e trabalhamos para reconstruir seu equilíbrio emocional e profissional.</p>
+                </div>
+                <div class="esp-card">
+                    <div class="esp-icon">🌺</div>
+                    <h3>Luto e Perdas</h3>
+                    <p>Todo luto merece ser acolhido. A terapia oferece um lugar seguro para processar perdas (de pessoas, relacionamentos ou fases da vida) com respeito e cuidado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BENEFICIOS ========== -->
+    <section class="beneficios section-pad">
+        <div class="container benef-inner">
+            <div class="benef-image" data-animate>
+                <div class="benef-img-placeholder">
+                    <svg viewBox="0 0 460 340" fill="none"><rect width="460" height="340" rx="16" fill="#F2F0EC"/><circle cx="230" cy="170" r="120" fill="#B0907C" opacity="0.15"/><text x="230" y="175" text-anchor="middle" fill="#B0907C" font-size="14" font-family="Montserrat">Foto do Consultório</text></svg>
+                </div>
+            </div>
+            <div class="benef-content" data-animate data-delay="150">
+                <span class="eyebrow">Por que fazer terapia?</span>
+                <h2>Uma jornada de transformação com sigilo absoluto</h2>
+                <p>A psicoterapia não é apenas para momentos de crise. É um investimento em si mesmo, na qualidade de vida e na sua capacidade de lidar com o mundo.</p>
+                <ul class="benef-list">
+                    <li><span class="check-circle">✓</span><div><strong>Menos ansiedade e mais presença</strong><br><small>Ferramentas para acalmar a mente e viver o momento.</small></div></li>
+                    <li><span class="check-circle">✓</span><div><strong>Melhora no humor e motivação</strong><br><small>Compreensão e regulação das próprias emoções.</small></div></li>
+                    <li><span class="check-circle">✓</span><div><strong>Relações mais saudáveis</strong><br><small>Comunicação assertiva e limites bem estabelecidos.</small></div></li>
+                    <li><span class="check-circle">✓</span><div><strong>Autonomia e segurança pessoal</strong><br><small>Confiança para tomar decisões alinhadas a você.</small></div></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DEPOIMENTOS ========== -->
+    <section id="depoimentos" class="depoimentos section-pad">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="eyebrow eyebrow-light">O que dizem</span>
+                <h2 class="text-white">Transformações Reais</h2>
+                <p class="section-sub text-white-faded">Cada palavra abaixo representa uma história de cuidado e coragem.</p>
+            </div>
+
+            <div class="dep-grid" data-animate>
+                <div class="dep-card">
+                    <div class="dep-stars">★★★★★</div>
+                    <p class="dep-text">"A terapia com a Andressa mudou completamente a forma como encaro meus desafios. Aprendi a me ouvir e hoje tomo decisões com muito mais clareza e segurança."</p>
+                    <div class="dep-author">
+                        <div class="dep-avatar">M</div>
+                        <div>
+                            <strong>Mariana S.</strong>
+                            <small>Paciente — via Google</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="dep-card dep-card-featured">
+                    <div class="dep-stars">★★★★★</div>
+                    <p class="dep-text">"Sempre tive receio de iniciar a terapia, mas desde a primeira sessão me senti totalmente acolhida. A Andressa tem um jeito único de escutar sem julgamentos. Recomendo muito!"</p>
+                    <div class="dep-author">
+                        <div class="dep-avatar">C</div>
+                        <div>
+                            <strong>Camila R.</strong>
+                            <small>Paciente — via Google</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="dep-card">
+                    <div class="dep-stars">★★★★★</div>
+                    <p class="dep-text">"O atendimento online é tão bom quanto o presencial. Muito profissional e pontual. Depois de meses de sessões, sinto que estou muito mais inteiro e leve."</p>
+                    <div class="dep-author">
+                        <div class="dep-avatar">R</div>
+                        <div>
+                            <strong>Rafael M.</strong>
+                            <small>Paciente — via Google</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="google-badge" data-animate>
+                <svg width="20" height="20" viewBox="0 0 48 48"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.32-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.68 28.18c-.44-1.32-.69-2.73-.69-4.18s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.34-5.7z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.34 5.7c1.74-5.2 6.59-9.07 12.32-9.07z"/></svg>
+                <strong>5.0</strong> <span>— Avaliação no Google Meu Negócio</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section id="faq" class="faq section-pad bg-light">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="eyebrow">Dúvidas Frequentes</span>
+                <h2>O que você precisa saber antes de começar</h2>
+            </div>
+
+            <div class="faq-list" data-animate>
+                <div class="faq-item">
+                    <button class="faq-q">Quanto tempo dura cada sessão? <span>+</span></button>
+                    <div class="faq-a"><p>Cada sessão tem duração de aproximadamente 50 minutos, com frequência semanal recomendada para melhores resultados no processo terapêutico.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">O atendimento online é tão eficaz quanto o presencial? <span>+</span></button>
+                    <div class="faq-a"><p>Sim! Estudos científicos comprovam a mesma eficácia. O atendimento online é regulamentado pelo CFP e oferece toda a comodidade sem abrir mão da qualidade e do sigilo.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">Aceita convênios médicos? <span>+</span></button>
+                    <div class="faq-a"><p>O atendimento é particular. Emito recibo que pode ser usado para solicitar reembolso no seu plano de saúde, conforme sua apólice. Consulte sua operadora sobre as condições de reembolso.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">Como funciona a primeira sessão? <span>+</span></button>
+                    <div class="faq-a"><p>A primeira sessão é uma conversa inicial onde você me conta o que motivou a busca pela terapia, tiramos dúvidas sobre o processo e avaliamos juntos se a abordagem faz sentido para você. Sem compromisso!</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">Preciso de encaminhamento médico para iniciar? <span>+</span></button>
+                    <div class="faq-a"><p>Não! Você pode entrar em contato diretamente, sem necessidade de encaminhamento. Basta entrar em contato pelo WhatsApp e agendarmos uma conversa.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BLOG ========== -->
+    <section id="blog" class="blog section-pad">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="eyebrow">Reflexões e Conteúdos</span>
+                <h2>Artigos que cuidam da sua mente</h2>
+                <p class="section-sub">Conteúdo gratuito para te ajudar no dia a dia, mesmo antes de iniciar a terapia.</p>
+            </div>
+
+            <div class="blog-grid" data-animate>
+                <article class="blog-card blog-card-featured">
+                    <div class="blog-img blog-img-1">
+                        <span class="blog-tag">Ansiedade</span>
+                    </div>
+                    <div class="blog-body">
+                        <p class="blog-date">08 Mar 2025</p>
+                        <h3>5 sinais de que a ansiedade está controlando sua vida</h3>
+                        <p>A ansiedade nem sempre aparece como um ataque de pânico. Às vezes, ela age silenciosamente e vai tomando espaço no seu cotidiano sem você perceber...</p>
+                        <a href="#" class="blog-link">Ler artigo →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img blog-img-2">
+                        <span class="blog-tag">Autoconhecimento</span>
+                    </div>
+                    <div class="blog-body">
+                        <p class="blog-date">15 Fev 2025</p>
+                        <h3>Por que é tão difícil pedir ajuda?</h3>
+                        <p>Buscamos ajuda médica quando temos febre, mas quando sofremos por dentro, esperamos demais. Entenda as barreiras que nos impedem de pedir apoio.</p>
+                        <a href="#" class="blog-link">Ler artigo →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-img blog-img-3">
+                        <span class="blog-tag">Relacionamentos</span>
+                    </div>
+                    <div class="blog-body">
+                        <p class="blog-date">20 Jan 2025</p>
+                        <h3>Como estabelecer limites sem culpa</h3>
+                        <p>Dizer "não" é um ato de amor-próprio, não de egoísmo. Descubra como construir limites saudáveis que nutrem suas relações ao invés de destruí-las.</p>
+                        <a href="#" class="blog-link">Ler artigo →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section id="contato" class="contato section-pad bg-light">
+        <div class="container contato-inner">
+            <div class="contato-info" data-animate>
+                <span class="eyebrow">Entre em Contato</span>
+                <h2>Dê o primeiro passo.<br>Você não precisa só de mais força de vontade.</h2>
+                <p>Agende sua sessão ou tire dúvidas pelo WhatsApp. Estou aqui para te ouvir.</p>
+
+                <ul class="contato-list">
+                    <li>
+                        <div class="contato-icon">📍</div>
+                        <div>
+                            <strong>Presencial</strong>
+                            <span>Porto Alegre – RS</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contato-icon">💻</div>
+                        <div>
+                            <strong>Online</strong>
+                            <span>Todo o Brasil e Exterior</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contato-icon">📱</div>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <span>(51) 9 9999-9999</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contato-icon">✉️</div>
+                        <div>
+                            <strong>E-mail</strong>
+                            <span>contato@andressawendling.com.br</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <a href="https://wa.me/5551999999999?text=Olá! Gostaria de agendar uma consulta." target="_blank" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Agendar no WhatsApp
+                </a>
+            </div>
+
+            <div class="contato-map" data-animate data-delay="150">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d439476.5753068!2d-51.34!3d-30.03!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197062e5692d1b%3A0xbdaf81b5e5f1ac01!2sPorto%20Alegre%2C%20RS!5e0!3m2!1spt!2sbr!4v1699999999999"
+                    width="100%"
+                    height="400"
+                    style="border:0; border-radius: 16px;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <div class="logo-monogram">AW</div>
+                <div class="logo-info">
+                    <span class="logo-name text-white-footer">Andressa Wendling</span>
+                    <span class="logo-sub text-faded">Psicóloga CRP 07/33314</span>
+                </div>
+            </div>
+            <div class="footer-links-wrap">
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#hero">Início</a></li>
+                        <li><a href="#sobre">Sobre Mim</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes Sociais</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">Instagram</a></li>
+                        <li><a href="#" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="https://wa.me/5551999999999" target="_blank">(51) 9 9999-9999</a></li>
+                        <li><a href="mailto:contato@andressawendling.com.br">contato@andressawendling.com.br</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Andressa Wendling – Psicóloga Clínica. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5551999999999?text=Olá! Gostaria de agendar uma consulta." target="_blank" class="whatsapp-float" aria-label="Chat no WhatsApp">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
 
     <script src="js/main.js"></script>
 </body>
